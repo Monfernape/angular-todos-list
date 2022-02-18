@@ -1,0 +1,11 @@
+<form>
+  <label for="todo-title">Title</label>
+  <input
+    name="todo"
+    [(ngModel)]="title"
+    #todo="ngModel"
+    id="todo-title"
+    type="text"
+  />
+  <button (click)="handleAddTodo()">Add Todo</button>
+</form>

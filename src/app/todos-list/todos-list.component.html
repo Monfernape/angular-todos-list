@@ -1,0 +1,5 @@
+<ul>
+  <li *ngFor="let item of todos; index as i">
+    <span>{{item}}</span><button (click)="handleDeleteTodo(i)">Delete</button>
+  </li>
+</ul>
